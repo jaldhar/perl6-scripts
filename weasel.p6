@@ -38,7 +38,7 @@ repeat {
                 $score++;
             }
         }
-        if $score >= $hi-score {
+        if $score > $hi-score {
             $hi-score = $score;
             @current-phrase = @trial;
         }

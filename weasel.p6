@@ -19,7 +19,7 @@ my @target-phrase = 'METHINKS IT IS LIKE A WEASEL'.comb;
 my Rat $mutation-threshold = 0.05;
 my Int $copies = 100;
 
-my @current-phrase = map { @charset.pick }, 1 .. 28;
+my @current-phrase = map { @charset.pick }, 0 .. @target-phrase.end;
 my Int $hi-score = 0;
 my Int $count = 0;
 
